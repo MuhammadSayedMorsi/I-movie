@@ -1,0 +1,114 @@
+// global
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main_moveis {
+  background-color: #eef1f2;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 60px;
+  padding-top: 40px;
+  .main__movies__title {
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      padding-left: 40px;
+      padding-bottom: 20px;
+      color: #000000;
+      letter-spacing: 1px;
+    }
+  }
+  hr {
+    border: none;
+    margin-left: 40px;
+    margin-right: 80px;
+    border-bottom: 1px solid #000000;
+  }
+  .main__movies__row {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      display: block;
+      width: 100%;
+
+    }
+    .wrapper__figure {
+      flex-basis: 250px;
+      position: relative;
+
+    @media (max-width: 767px) {
+      display: block;
+      width: 90%;
+    }
+       figure {
+        img {
+          border-radius: 4px;
+          box-shadow: 3px 3px 2px 1px  rgba(0,0,0,0.4);
+          width: 100%;
+        }
+        span {
+          position: absolute;
+          top: 220px;
+          left: 185px;
+          background-color: #e4bb24;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          color: #ffffff;
+          @media (max-width: 767px) {
+            position: absolute;
+            top: 759px;
+            left: 573px;
+          }
+        }
+        figcaption {
+          font-size: 13px;
+          text-transform: uppercase;
+          @media (max-width: 767px) {
+            margin: 20px 0;
+          }
+          strong {
+            display: block;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 300;
+            color: #ffffff;
+          }
+        }
+       }
+
+
+    }
+
+  }
+  .more__m {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+
+
+    button {
+      padding: 5px 15px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: #000;
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: #33cc66;
+        color: #ffffff;
+
+      }
+    }
+  }
+}

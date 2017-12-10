@@ -1,0 +1,25 @@
+// This is the single file output by scss. It is intended to ONLY @import other files.
+
+
+// 1 - TOOLS
+@import '1-tools/normalize';
+
+
+// 2 - BASICS
+@import '2-basics/body-element';
+@import '2-basics/selection-colors';
+@import '2-basics/links';
+@import '2-basics/typography';
+
+
+// 3 - header
+@import '3-component/carousel';
+@import '3-component/movies-p';
+@import '3-component/shuflle';
+@import '3-component/about';
+@import '3-component/footer';
+@import '3-component/sign';
+
+
+
+
