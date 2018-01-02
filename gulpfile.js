@@ -37,9 +37,6 @@ gulp.watch("./*.html").on('change', browserSync.reload);
 
 gulp.watch("app/assets/js/*.js").on('change', browserSync.reload);
 
-
-
-
 });
 
 // Default Task
