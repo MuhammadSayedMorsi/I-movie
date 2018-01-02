@@ -33,7 +33,7 @@ gulp.task('serve', ['sass'], function() {
 
 gulp.watch(["app/assets/css/scss/**/*.scss"], ['sass']);
 
-gulp.watch("./*.html").on('change', browserSync.reload);
+gulp.watch("./index.html").on('change', browserSync.reload);
 
 gulp.watch("app/assets/js/*.js").on('change', browserSync.reload);
 
