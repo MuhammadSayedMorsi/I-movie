@@ -28,12 +28,12 @@ gulp.task('sass', function() {
 // Watch Sass & Serve
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
-        server: "app"
+        server: "./"
 });
 
 gulp.watch(["app/assets/css/scss/**/*.scss"], ['sass']);
 
-gulp.watch("app/*.html").on('change', browserSync.reload);
+gulp.watch("./*.html").on('change', browserSync.reload);
 
 gulp.watch("app/assets/js/*.js").on('change', browserSync.reload);
 
