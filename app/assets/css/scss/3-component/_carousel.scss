@@ -169,25 +169,11 @@
 	background: transparent url(../images/waves.gif) repeat 0% 0%;
 	background-image: url(../img/img__carousel/Netflix-Background.jpg);
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.2), 0px -2px 1px #fff;
-	-webkit-transition: background-position 1.4s ease-in-out 0.3s;
-	-moz-transition: background-position 1.4s ease-in-out 0.3s;
-	-o-transition: background-position 1.4s ease-in-out 0.3s;
-	-ms-transition: background-position 1.4s ease-in-out 0.3s;
 	transition: background-position 1.4s ease-in-out 0.3s;
-
 	@media (max-width: 550px) {
 		min-width: 300px;
 	}
 
-}
-.da-slider::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0,0,0,0.9);
-	z-index: 10;
 }
 .da-slide{
 	position: absolute;
